@@ -90,7 +90,7 @@ class MyLinkedList<T> implements Iterable<T>{
             p = p.next;
         }
         p.next = p.next.next;
-        if (p.next == null) //删除尾节点，要移动尾指针
+        if (p.next == null)
             tail = p;
         length--;
     }
